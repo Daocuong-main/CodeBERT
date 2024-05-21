@@ -127,3 +127,14 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+# Ignore specific large files
+GraphCodeBERT/clonedetection/dataset/Multiclass/train.txt
+GraphCodeBERT/clonedetection/saved_models/checkpoint-best-f1/model.bin
+GraphCodeBERT/clonedetection/dataset/Multiclass/CLONES.csv
+GraphCodeBERT/clonedetection/dataset/Multiclass/FUNCTIONS.csv
+
+# Ignore all CSV files
+*.csv
+
+# Ignore all binary files
+*.bin
