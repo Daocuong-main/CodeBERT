@@ -326,7 +326,7 @@ def train(args, train_dataset, model, tokenizer):
     #build dataloader
     train_sampler = RandomSampler(train_dataset)
     train_dataloader = DataLoader(train_dataset, sampler=train_sampler, batch_size=args.train_batch_size,num_workers=4)
-    
+    print(f"len( train_dataloader): {len( train_dataloader)}")
     args.max_steps=args.epochs*len( train_dataloader)
     args.save_steps=len( train_dataloader)//10
     args.warmup_steps=args.max_steps//5
